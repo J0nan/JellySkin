@@ -1,5 +1,7 @@
 # JellySkin-J0nan:
 ### A modification of JellySkin by @prayag17
+
+![NPM_version](https://img.shields.io/npm/v/jellyskin-j0nan/latest?style=for-the-badge)
   
 # Usage :information_source: :
 - To use the JellySkin theme copy the line below into "Dashboard -> General -> Custom CSS" and click save, it will apply immediately server-wide to all users on top of any theme they may be using. To remove the theme, clear the "Custom CSS" field and then click save. <b>NOTE: Theme may not work when using Nginx Reverse Proxy. Scroll down below to learn how to fix this.
