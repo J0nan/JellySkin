@@ -1,0 +1,119 @@
+/** @format */
+.card {
+  --height: calc(100% - 3.65em);
+}
+.card .innerCardFooter {
+  border-radius: 0 !important;
+  margin-bottom: 3.65em;
+  width: 100% !important;
+}
+.card .innerCardFooter .itemProgressBar {
+  background: rgba(0, 0, 0, 0.7);
+}
+.cardText {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1.5em;
+  z-index: 5;
+}
+.cardText-first {
+  bottom: 1.75em;
+}
+.cardText-secondary {
+  bottom: 0;
+}
+.cardScalable::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3.65em;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7));
+}
+.cardBox {
+  position: relative;
+}
+.cardOverlayContainer {
+  height: var(--height);
+}
+.card[data-type=CollectionFolder] {
+  --height: calc(100% - 2.999em);
+}
+.card[data-type=CollectionFolder] .cardScalable::after {
+  display: none !important;
+}
+.card[data-type=CollectionFolder] .cardText {
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7));
+  text-align: center;
+}
+
+.detailImageContainer .cardScalable::after {
+  display: none !important;
+}
+
+.localUsers .card .cardFooter {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: center;
+  padding: 0.3em;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7));
+  width: calc(100% - 0.6em);
+  bottom: 0;
+  height: fit-content;
+}
+.localUsers .card .cardText {
+  position: static !important;
+  height: 1.5em;
+  z-index: 5;
+  flex: 0 0 100%;
+  box-sizing: content-box;
+  padding: 0;
+  width: 100%;
+}
+.localUsers .card .cardScalable::after {
+  display: none;
+}
+
+#divUsers .card .cardFooter {
+  padding: 0.3em 0.3em 0.5em;
+  position: absolute;
+  bottom: 0;
+  width: calc(100% - 0.61em);
+  height: 1.5em;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7));
+}
+#divUsers .card .cardScalable::after {
+  display: none;
+}
+
+.installedPlugins .card .cardFooter,
+#divVirtualFolders .card .cardFooter,
+.devicesList .card .cardFooter {
+  padding: 0.3em 0.3em 0.5em;
+  position: absolute;
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+  width: calc(100% - 0.61em);
+  bottom: 0;
+  flex-direction: column;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+}
+.installedPlugins .card .cardText,
+#divVirtualFolders .card .cardText,
+.devicesList .card .cardText {
+  position: static !important;
+}
+.installedPlugins .card .cardScalable::after,
+#divVirtualFolders .card .cardScalable::after,
+.devicesList .card .cardScalable::after {
+  display: none;
+}
+
+/*# sourceMappingURL=compactPosters.css.map */
