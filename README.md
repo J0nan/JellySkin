@@ -1,9 +1,6 @@
-# JellySkin:
-### Vibrant, minimal, and sprinkled with tons of animations <br> CSS theme for Jellyfin
+# JellySkin-J0nan:
+### A modification of JellySkin by @prayag17
   
-![npm (tag)](https://img.shields.io/npm/v/jellyskin/latest?style=for-the-badge) ![jsDelivr hits (npm)](https://img.shields.io/jsdelivr/npm/hm/jellyskin?label=Downloads&style=for-the-badge) ![GitHub](https://img.shields.io/github/license/prayag17/JellySkin?style=for-the-badge)\
-![GitHub Repo stars](https://img.shields.io/github/stars/prayag17/JellySkin?style=social)
-
 # Usage :information_source: :
 - To use the JellySkin theme copy the line below into "Dashboard -> General -> Custom CSS" and click save, it will apply immediately server-wide to all users on top of any theme they may be using. To remove the theme, clear the "Custom CSS" field and then click save. <b>NOTE: Theme may not work when using Nginx Reverse Proxy. Scroll down below to learn how to fix this.
 
