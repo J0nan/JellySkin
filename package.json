@@ -1,7 +1,7 @@
 {
-	"name": "jellyskin",
+	"name": "jellyskin-J0nan",
 	"version": "12.2.4",
-	"description": "A vibrant skin for jellyfin made with SASS",
+	"description": "A fork of JellySkin",
 	"files": [
 		"/dist"
 	],
@@ -12,10 +12,10 @@
 		"build": "sass src/:dist/ src/addons/:dist/addons/",
 		"postbuild": "postcss dist/*.css -u autoprefixer cssnano -r",
 		"start": "npm-run-all --parallel watch:sass serve",
-		"pub:prerelease": "np prerelease --no-tests --tag nightly --branch SASSify",
-		"pub:patch": "np patch --no-tests --tag latest --branch SASSify",
-		"pub:minor": "np minor --no-tests --tag latest --branch SASSify",
-		"pub:major": "np major --no-tests --tag latest --branch SASSify"
+		"pub:prerelease": "np prerelease --no-tests --tag nightly --branch master",
+		"pub:patch": "np patch --no-tests --tag latest --branch master",
+		"pub:minor": "np minor --no-tests --tag latest --branch master",
+		"pub:major": "np major --no-tests --tag latest --branch master"
 	},
 	"np": {
 		"yarn": false,
@@ -34,17 +34,17 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/prayag17/JellySkin.git"
+		"url": "git+https://github.com/J0nan/JellySkin.git"
 	},
 	"keywords": [
 		"jellyfin",
 		"css",
 		"jellyskin"
 	],
-	"author": "prayag17",
+	"author": "j0nan",
 	"license": "GPL-3.0-only",
 	"bugs": {
-		"url": "https://github.com/prayag17/JellySkin/issues"
+		"url": "https://github.com/J0nan/JellySkin/issues"
 	},
-	"homepage": "https://github.com/prayag17/JellySkin#readme"
+	"homepage": "https://github.com/J0nan/JellySkin#readme"
 }
