@@ -39,3 +39,26 @@
 .paper-icon-button-light {
 	border-radius: ab.$rounding-default;
 }
+
+.skipIntro {
+	padding: 0 1px;
+    position: absolute;
+    right: 10em;
+    bottom: 11em;
+    background-color:ab.$background-gradient;
+    border: 1px solid;
+    border-radius: ab.$rounding-default;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 ab.$jf-blue-light;
+    -webkit-transition: ease-out ab.$transition-time-fast-1;
+    -moz-transition: ease-out ab.$transition-time-fast-1;
+    transition: ease-out ab.$transition-time-fast-1;
+}
+
+.skipIntro:hover {
+	box-shadow: inset 400px 0 0 0 ab.$jf-blue-light;
+    -webkit-transition: ease-in ab.$transition-time-default linear;
+    -moz-transition: ease-in ab.$transition-time-default linear;
+	transition: ease-in ab.$transition-time-default linear;
+}

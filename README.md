@@ -120,3 +120,19 @@
   - Fork this repository.
   - Add your patch/feature
   - Create a pull request and thats it
+
+# Developers
+
+Remember to change the version in the [package.json](package.json) file.
+
+```
+npm install
+```
+
+```
+npm run build
+```
+
+```
+npm publish
+```
