@@ -291,6 +291,54 @@
 			flex-basis: 50vw;
 			font-size: 1.5em;
 		}
+		.childrenItemsContainer.itemsContainer.vertical-list {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			gap: 1em;
+			.listItem {
+				.paper-icon-button-light {
+					&[data-action="menu"]::after {
+						content: "";
+						margin-left: 100%;
+					}
+					&:not([data-action="menu"]) {
+						aspect-ratio: 1;
+						border-radius: $rounding-default;
+					}
+				}
+				&[data-type="Episode"] {
+					flex-direction: column;
+					padding: 0;
+					margin: 0 !important;
+					background: rgb(0 0 0 / 0.5);
+					border-radius: $rounding-default;
+					transition: background $transition-time-default;
+					&:hover {
+						background: rgb(0 0 0 / 0.7);
+					}
+				}
+	
+				&-content {
+					flex-direction: column;
+				}
+				&Image-large {
+					width: 100%;
+					padding: 0 !important;
+					margin: 0 !important;
+				}
+				&-overview {
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					text-align: start;
+					width: 100%;
+					overflow: hidden;
+				}
+	
+				&Body {
+					width: 95%;
+				}
+			}
+		}
 		.parentName a {
 			text-align: start;
 		}
